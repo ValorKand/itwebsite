@@ -103,5 +103,10 @@ body {
 }
 
 .justificado {
- text-align: justify;
+    text-align: justify;
+}
+
+#mainTitle {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
 }
