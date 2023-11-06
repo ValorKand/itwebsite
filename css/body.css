@@ -102,6 +102,6 @@ body {
     font-size: 1.5em;
 }
 
-#mainHeader {
- background-color: #3f51b5;
+.justificado {
+ text-align: justify;
 }
