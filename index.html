@@ -8,7 +8,7 @@
         <meta name="keywords" content="Instituto Tabasco, educación, escuela, sjs, preescolar, primaria, secundaria, bachillerato" />
         <meta name="author" content="Adonay David Hernández Vales" />
         <title>Instituto Tabasco | ¡Fieles al deber!</title>
-        <link rel="shortcut icon" href="./img/favicon.ico">
+        <link rel="shortcut icon" href="./img/ui/pagina/favicon.ico">
         <link rel="stylesheet" href="./semantic/semantic.min.css"></link>
         <link rel="stylesheet" href="./css/body.css"></link>
     </head>
@@ -41,15 +41,15 @@
         </div>
         <!-- Todo el contenido de la pagina -->
         <div class="pusher">
-            <div class="ui inverted vertical masthead center aligned segment" style="background-image: url(./img/itheader.jpg);">
-                <div class="ui container">
+            <div class="ui inverted vertical masthead center aligned segment" style="background-image: url(./img/ui/pagina/itheader.png);">
+                <div class="ui blurring container">
                     <div class="ui large secondary inverted pointing menu">
                         <!-- div del logo del header -->
                         <div class="item">
                             <div class="ui logo shape">
                                 <div class="sides">
                                     <div class="active ui sides">
-                                        <img class="ui image" src="./img/logo.png" width="50" height="50">
+                                        <img class="ui image" src="./img/ui/pagina/logo.png" width="50" height="50">
                                     </div>
                                 </div>
                             </div>
@@ -86,11 +86,17 @@
                         </h2>
                     </div>
                     <div class="ui huge hidden divider"></div>
-                    <div class="ui red huge button">
-                        Conócenos <i class="right arrow icon"></i>
+                    <div type="submit" onClick="window.location='#quienesSomos'" class="ui animated fade red huge button" tabindex="0">
+                        <div class="visible content">
+                            <i class="down arrow icon"></i>Conócenos
+                        </div>
+                        <div class="hidden content"><i class="down arrow icon"></i></div>
                     </div>
                 </div>
             </div>
+            <div class="ui hidden divider"></div>
+            <div id="quienesSomos" class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
             <!-- Quíenes somos... -->
             <div class="ui vertical stripe segment">
                 <div class="ui middle aligned stackable grid container">
@@ -114,12 +120,12 @@
 
                         </div>
                         <div class="six wide right floated column">
-                            <img class="ui large bordered rounded image" src="./img/conocenos-image.png" />
+                            <img class="ui large bordered rounded image" src="./img/ui/pagina/conocenos-image.png" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="center aligned column">
-                            <a class="ui red huge button">Checa nuestra Oferta Educativa</a>
+                            <a onClick="window.location='#ofertaEducativa'" class="ui red huge button">Checa nuestra Oferta Educativa</a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +148,7 @@
                             <p>
                                 <img
                                 class="ui avatar image"
-                                src="./img/avatar.jpg"
+                                src="./img/ui/pagina/avatar.jpg"
                                 />
                                 <b>P.</b> Silviano Carrillo Cárdenas
                             </p>
@@ -151,61 +157,92 @@
                 </div>
             </div>
             <!-- Oferta educativa... -->
-            <div class="ui vertical stripe segment">
-                <div class="ui middle aligned stackable grid container">
-                    <div class="row">
-                        <div class="ui container">
-                            <h3 class="ui middle header">Oferta educativa</h3>
-                            <div class="ui hidden divider"></div>
-                            <div class="ui link cards">
-                                <!-- Todas las imágenes deben ser de 1280 x 1280 -->
-                                <div class="ui card">
-                                    <div class="image">
-                                        <img src="./img/internet.png"></img>
-                                    </div>
+            <div id="ofertaEducativa" class="ui vertical stripe segment">
+                <div class="ui middle aligned stackable container">
+                    <h1 class="ui header">
+                        <img src="./img/ui/iconos/school.png"></img>
+                        <div class="content">
+                            Oferta Educativa
+                        </div>
+                    </h1>
+                    <div class="ui hidden divider"></div>
+                    <div class="ui link four doubling special cards">
+                        <!-- Tarjeta de preescolar -->
+                        <div class="red card">
+                            <div class="blurring dimmable image">
+                                <div class="ui inverted dimmer">
                                     <div class="content">
-                                        <p class="header">Preescolar</p>
-                                        <div class="description">
-                                            El mejor preescolar de todo tabasco
+                                        <div class="center">
+                                            <a href="#" class="ui inverted button">Descubre Más</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="ui card">
-                                    <div class="image">
-                                        <img src="./img/clima.png"></img>
-                                    </div>
-                                    <div class="content">
-                                        <p class="header">Primaria</p>
-                                        <div class="description">
-                                            Esencial para el crecimiento
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ui card">
-                                    <div class="image">
-                                        <img src="./img/laboratorio.png"></img>
-                                    </div>
-                                    <div class="content">
-                                        <p class="header">Secundaria</p>
-                                        <div class="description">
-                                            Donde se descubren nuevos conocimientos
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ui card">
-                                    <div class="image">
-                                        <img src="./img/cancha.png"></img>
-                                    </div>
-                                    <div class="content">
-                                        <p class="header">Bachillerato (ICHT)</p>
-                                        <div class="description">
-                                            Sentando las bases para un buen profesionista
-                                        </div>
-                                    </div>
+                                <img src="./img/ui/pagina/preescolar.png">
+                            </div>
+                            <div class="content">
+                                <a class="header">Preescolar</a>
+                                <div class="meta">
+                                    <span class="text">Donde los pequeños aprenden y se divierten</span>
                                 </div>
                             </div>
                         </div>
-
+                        <!-- Tarjeta de primaria -->
+                        <div class="green card">
+                            <div class="blurring dimmable image">
+                                <div class="ui inverted dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui inverted button">Descubre Más</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./img/ui/pagina/primaria.png">
+                            </div>
+                            <div class="content">
+                                <a class="header">Primaria</a>
+                                <div class="meta">
+                                    <span class="text">Esencial para el desarollo de los niños</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tarjeta de secundaria -->
+                        <div class="blue card">
+                            <div class="blurring dimmable image">
+                                <div class="ui inverted dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui inverted button">Descubre Más</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./img/ui/pagina/secundaria.png">
+                            </div>
+                            <div class="content">
+                                <a class="header">Secundaria</a>
+                                <div class="meta">
+                                    <span class="text">El descubrimiento de habilidades no tiene límites</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tarjeta de Bachillerato -->
+                        <div class="yellow card">
+                            <div class="blurring dimmable image">
+                                <div class="ui inverted dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui inverted button">Descubre Más</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./img/ui/pagina/bachillerato.png">
+                            </div>
+                            <div class="content">
+                                <a class="header">Bachillerato (ICHT)</a>
+                                <div class="meta">
+                                    <span class="text">Orientando a los jóvenes a un mejor futuro</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -214,40 +251,52 @@
                 <div class="ui middle aligned stackable grid container">
                     <div class="row">
                         <div class="ui container">
-                            <h3 class="ui header">En nuestras instalaciones tenemos</h3>
-                            <div class="ui five column grid">
+                            <h1 class="ui header">
+                                <img src="./img/ui/iconos/plugin.png"></img>
+                                <div class="content">
+                                    En nuestras instalaciones contamos con
+                                </div>
+                            </h1>
+                            <div class="ui hidden divider"></div>
+                            <div class="ui doubling five column grid">
                                 <div class="column">
                                     <div class="ui container">
                                         <!-- Todas las imágenes deben ser de 1280 x 1280 -->
-                                        <img src="./img/internet.png" width="150"></img>
+                                        <img src="./img/ui/pagina/internet.png" width="150"></img>
                                         <h1>Conexión a internet</h1>
                                         <p>WiFi por todas partes, por donde camines, ahí habrá internet</p>
                                     </div>
                                 </div>
                                 <div class="column">
                                     <div class="ui container">
-                                        <img src="./img/clima.png" width="150"></img>
+                                        <img src="./img/ui/pagina/clima.png" width="150"></img>
                                         <h1>Aulas climatizadas</h1>
                                         <p>En todos los niveles habidos y por haber</p>
                                     </div>
                                 </div>
                                 <div class="column">
                                     <div class="ui container">
-                                        <img src="./img/laboratorio.png" width="150"></img>
+                                        <img src="./img/ui/pagina/laboratorio.png" width="150"></img>
                                         <h1>Laboratorios especializados</h1>
                                         <p>De cómputo, música, química y más para añadir a tu educación algo más que solo clases regulares</p>
                                     </div>
                                 </div>
                                 <div class="column">
                                     <div class="ui container">
-                                        <img src="./img/cancha.png" width="150"></img>
+                                        <img src="./img/ui/pagina/cancha.png" width="150"></img>
                                         <h1>Espacios deportivos</h1>
                                         <p>Canchas al aire libre, para que tomes el aire fresco</p>
                                     </div>
                                 </div>
+                                <div class="column">
+                                    <div class="ui container">
+                                        <img src="./img/ui/pagina/plataforma.png" width="150"></img>
+                                        <h1>Plataforma educativa</h1>
+                                        <p>Mantente al tanto del desempeño de tus hijos estés donde estés</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="ui hidden divider"></div>
                     <div class="row">
