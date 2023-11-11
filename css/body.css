@@ -69,8 +69,8 @@ body {
 .footer.segment {
     padding: 5em 0em;
 }
-
-.secondary.pointing.menu .toc.item {
+/*comportamiento del menú*/
+.primary.pointing.menu .toc.item {
     display: none;
 }
 
@@ -79,12 +79,12 @@ body {
     display: none !important;
 }
 
-.secondary.pointing.menu .item,
-.secondary.pointing.menu .menu {
+.primary.pointing.menu .item,
+.primary.pointing.menu .menu {
     display: none;
 }
 
-.secondary.pointing.menu .toc.item {
+.primary.pointing.menu .toc.item {
     display: block;
 }
 
@@ -108,5 +108,5 @@ body {
 
 #mainTitle {
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: white;
 }

@@ -16,9 +16,9 @@
         <!--Menú oculto cuando bajas la pagina-->
         <div class="ui large top fixed hidden menu">
             <div class="ui container">
-                <a class="active item">Inicio</a>
+                <a class="active item" href="index.html">Inicio</a>
                 <a class="item">Inscripciones</a>
-                <a class="item">Oferta educativa</a>
+                <a class="item" onClick="window.location='#ofertaEducativa'">Oferta educativa</a>
                 <div class="right menu">
                     <div class="item">
                         <a href="https://wa.me/+529933128843" class="ui green button" target="_blank">
@@ -35,15 +35,16 @@
         </div>
         <!--Menú lateral-->
         <div class="ui vertical inverted sidebar menu">
-            <a class="active item">Inicio</a>
+            <a class="active item" href="index.html">Inicio</a>
             <a class="item">Inscripciones</a>
-            <a class="item">Oferta Educativa</a>
+            <a class="item" onClick="window.location='#ofertaEducativa'">Oferta Educativa</a>
         </div>
         <!-- Todo el contenido de la pagina -->
         <div class="pusher">
             <div class="ui inverted vertical masthead center aligned segment" style="background-image: url(./img/ui/pagina/itheader.png);">
-                <div class="ui blurring container">
-                    <div class="ui large secondary inverted pointing menu">
+                <!-- Menú principal -->
+                <div class="ui container">
+                    <div class="ui large primary pointing menu">
                         <!-- div del logo del header -->
                         <div class="item">
                             <div class="ui logo shape">
@@ -57,9 +58,19 @@
                         <!-- Fin div del logo del header -->
                         <div class="left item">
                             <a class="toc item"><i class="sidebar icon"></i></a>
-                            <a class="active item">Inicio</a>
-                            <a class="item">Inscripciones</a>
-                            <a class="item">Oferta Educativa</a>
+                            <a class="active item" href="index.html">Inicio</a>
+                            <div class="ui pointing dropdown link item">
+                                <span class="text">Inscripciones</span>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="header">Secciones</div>
+                                    <div class="item">Preescolar</div>
+                                    <div class="item">Primaria</div>
+                                    <div class="item">Secundaria</div>
+                                    <div class="item">Bachillerato</div>
+                                </div>
+                            </div>
+                            <a class="item" onClick="window.location='#ofertaEducativa'">Oferta Educativa</a>
                         </div>
                         <!-- Botones del header, WhatsApp y SM Educamos -->
                         <div class="right item">
