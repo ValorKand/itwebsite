@@ -1,3 +1,5 @@
+/*secondhead es la propiedad del menú para las subpáginas, masthead es para el index*/
+
 body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: grayscale;
@@ -12,7 +14,16 @@ body {
     padding: 1em 0em;
 }
 
+.secondhead.segment {
+    min-height: 400px;
+    padding: 1em 0em;
+}
+
 .masthead .logo.item img {
+    margin-right: 1em;
+}
+
+.secondhead .logo.item img {
     margin-right: 1em;
 }
 
@@ -20,10 +31,26 @@ body {
     margin-left: 0.5em;
 }
 
+.secondhead .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
+
 .masthead h1.ui.header {
     margin-top: 2em;
     margin-bottom: 0em;
     font-size: 4em;
+    font-weight: normal;
+}
+
+.secondhead h1.ui.header {
+    margin-top: 2em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.secondhead h2{
+    font-size: 1.7em;
     font-weight: normal;
 }
 
@@ -92,9 +119,23 @@ body {
     min-height: 350px;
 }
 
+.secondhead.segment {
+    min-height: 250px;
+}
+
 .masthead h1.ui.header {
     font-size: 2em;
     margin-top: 1.5em;
+}
+
+.secondhead h1.ui.header {
+    font-size: 2em;
+    margin-top: 1.5em;
+}
+
+.secondhead h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
 }
 
 .masthead h2 {
