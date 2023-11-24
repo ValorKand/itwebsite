@@ -10,12 +10,17 @@ body {
 }
 
 .masthead.segment {
-    min-height: 600px;
+    min-height: 450px;
     padding: 1em 0em;
 }
 
 .secondhead.segment {
     min-height: 400px;
+    padding: 1em 0em;
+}
+
+.thirdhead.segment {
+    min-height: 100px;
     padding: 1em 0em;
 }
 
@@ -27,6 +32,10 @@ body {
     margin-right: 1em;
 }
 
+.thirdhead .logo.item img {
+    margin-right: 1em;
+}
+
 .masthead .ui.menu .ui.button {
     margin-left: 0.5em;
 }
@@ -35,8 +44,12 @@ body {
     margin-left: 0.5em;
 }
 
+.thirdhead .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
+
 .masthead h1.ui.header {
-    margin-top: 2em;
+    margin-top: 0.5em;
     margin-bottom: 0em;
     font-size: 4em;
     font-weight: normal;
@@ -49,12 +62,24 @@ body {
     font-weight: 700;
 }
 
-.secondhead h2{
+.thirdhead h1.ui.header {
+    margin-top: 1em;
+    margin-bottom: 0em;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.masthead h2{
     font-size: 1.7em;
     font-weight: normal;
 }
 
-.masthead h2 {
+.secondhead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.thirdhead h2 {
     font-size: 1.7em;
     font-weight: normal;
 }
@@ -123,6 +148,10 @@ body {
     min-height: 250px;
 }
 
+.thirdhead.segment {
+    min-height: 250px;
+}
+
 .masthead h1.ui.header {
     font-size: 2em;
     margin-top: 1.5em;
@@ -133,7 +162,17 @@ body {
     margin-top: 1.5em;
 }
 
+.thirdhead h1.ui.header {
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
 .secondhead h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+}
+
+.thirdhead h2 {
     margin-top: 0.5em;
     font-size: 1.5em;
 }
@@ -147,7 +186,15 @@ body {
     text-align: justify;
 }
 
-#mainTitle {
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: white;
+.invertedQuestion span {
+    display: inline-block;
+    margin: 1em;
+}
+
+.invertedQuestion {
+    transform: scale(1, -1);
+    -moz-transform: scale(1, -1);
+    -webkit-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
 }

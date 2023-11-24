@@ -9,48 +9,114 @@
         <meta name="author" content="Adonay David Hernández Vales" />
         <title>Instituto Tabasco | ¡Fieles al deber!</title>
         <link rel="shortcut icon" href="./img/ui/pagina/favicon.ico">
-        <link rel="stylesheet" href="./semantic/semantic.min.css"></link>
+        <link rel="stylesheet" href="./semantic/semantic.css"></link>
         <link rel="stylesheet" href="./css/body.css"></link>
     </head>
     <body id="root">
-        <!--Menú oculto cuando bajas la pagina-->
-        <div class="ui large top fixed hidden menu">
-            <div class="ui container">
-                <a class="active item" href="index.html">Inicio</a>
-                <a class="item">Inscripciones</a>
-                <a class="item" onClick="window.location='#ofertaEducativa'">Oferta educativa</a>
-                <div class="right menu">
-                    <div class="item">
-                        <a href="https://wa.me/+529933128843" class="ui green button" target="_blank">
-                            <i class="whatsapp icon"></i>WhatsApp
-                        </a>
+        <!--Menú oculto cuando bajas la pagina, sólo para computadora-->
+        <div class="ui grid">
+            <div class="computer only large screen only column">
+                <div id="menuComputadora" class="ui top fixed hidden borderless menu">
+                    <div class="ui container">
+                        <!-- div del logo del header -->
+                        <div class="item">
+                            <div class="ui logo shape">
+                                <div class="sides">
+                                    <div class="active ui sides">
+                                        <img title="Instituto Tabasco" class="ui image" src="./img/ui/pagina/logo.png" width="50" height="50">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="active item" href="index.html">Inicio</a>
+                        <!-- Menú dropdown -->
+                        <div class="ui pointing dropdown link item">
+                            <span class="text">Inscripciones</span>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="header">Secciones</div>
+                                <a class="item" href="./paginas/secciones/preescolar.html">Preescolar</a>
+                                <a class="item">Primaria</a>
+                                <a class="item">Secundaria</a>
+                                <a class="item">Bachillerato</a>
+                            </div>
+                        </div>
+                        <a class="item" onClick="window.location='#ofertaEducativa'">Oferta educativa</a>
+                        <div class="right menu">
+                            <div class="item">
+                                <a href="https://wa.me/+529933128843" class="ui green button" target="_blank">
+                                    <i class="whatsapp icon"></i>WhatsApp
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://institutotabasco.educamos.com" class="ui black button" target="_blank">
+                                    <i class="book icon"></i>Educamos
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <a href="https://institutotabasco.educamos.com" class="ui black button" target="_blank">
-                            <i class="book icon"></i>Educamos
-                        </a>
+                </div>
+            </div>
+        </div>
+        <!--Menú oculto cuando bajas la pagina, sólo para móviles-->
+        <div class="ui grid">
+            <div class="mobile only tablet only widescreen only column">
+                <div id="menuMovil" class="ui top fixed hidden borderless menu">
+                    <div class="ui container">
+                        <a class="toc item"><i class="sidebar icon"></i></a>
+                        <!-- div del logo del header -->
+                        <div class="item">
+                            <div class="ui logo shape">
+                                <div class="sides">
+                                    <div class="active ui sides">
+                                        <img title="Instituto Tabasco" class="ui image" src="./img/ui/pagina/logo.png" width="50" height="50">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right item">
+                            <div class="right menu">
+                                <a href="https://wa.me/+529933128843" class="ui green button" target="_blank">
+                                    <i class="whatsapp icon"></i>WhatsApp
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!--Menú lateral-->
         <div class="ui vertical inverted sidebar menu">
-            <a class="active item" href="index.html">Inicio</a>
-            <a class="item">Inscripciones</a>
-            <a class="item" onClick="window.location='#ofertaEducativa'">Oferta Educativa</a>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <a class="active item header" href="index.html"><i class="home icon"></i>Inicio</a>
+            <div class="item">
+                <div class="header"><i class="sign-in icon"></i>Inscripciones</div>
+                <div class="menu">
+                    <div class="item">Preescolar</div>
+                </div>
+            </div>
+
+            <a class="item header" onClick="window.location='#ofertaEducativa'"><i class="graduation cap icon"></i>Oferta Educativa</a>
+            <a class="item header" href="https://institutotabasco.educamos.com"><i class="book icon"></i>Educamos</a>
         </div>
         <!-- Todo el contenido de la pagina -->
         <div class="pusher">
             <div class="ui inverted vertical masthead center aligned segment" style="background-image: url(./img/ui/pagina/itheader.png);">
+                <div class="mobile only column">
+                    <div class="ui hidden divider"></div>
+                </div>
                 <!-- Menú principal -->
                 <div class="ui container">
-                    <div class="ui large primary pointing menu">
+                    <div class="ui large primary pointing borderless menu">
                         <!-- div del logo del header -->
                         <div class="item">
                             <div class="ui logo shape">
                                 <div class="sides">
                                     <div class="active ui sides">
-                                        <img alt="Instituto Tabasco" class="ui image" src="./img/ui/pagina/logo.png" width="50" height="50">
+                                        <img title="Instituto Tabasco" class="ui image" src="./img/ui/pagina/logo.png" width="50" height="50">
                                     </div>
                                 </div>
                             </div>
@@ -59,6 +125,7 @@
                         <div class="left item">
                             <a class="toc item"><i class="sidebar icon"></i></a>
                             <a class="active item" href="index.html">Inicio</a>
+                            <!-- Menú dropdown -->
                             <div class="ui pointing dropdown link item">
                                 <span class="text">Inscripciones</span>
                                 <i class="dropdown icon"></i>
@@ -128,7 +195,6 @@
                                   <div class="item"><b>📈</b>Promover la calidad de la educación</div>
                                 </div>
                             </p>
-
                         </div>
                         <div class="six wide right floated column">
                             <img class="ui large bordered rounded image" src="./img/ui/pagina/conocenos-image.png" />
@@ -327,6 +393,7 @@
                     <a class="ui large primary button"><i class="check icon"></i>Me interesa</a>
                 </div>
             </div>
+            <!-- Pié de página -->
             <div class="ui inverted vertical footer segment">
                 <div class="ui container">
                     <div class="ui stackable inverted divided equal height stackable grid">

@@ -1,12 +1,27 @@
 $(document).ready(function() {
-    // fix menu when passed
+    // fija el menu cuando pasas la página
     $(".masthead").visibility({
         once: false,
+        //oculta y desoculta el menu según la clase "movil" o "computadora"
         onBottomPassed: function() {
-        $(".fixed.menu").transition("fade in");
+        $("#menuComputadora").transition("fade in");
+        $("#menuMovil").transition("fade in");
         },
         onBottomPassedReverse: function() {
-        $(".fixed.menu").transition("fade out");
+        $("#menuComputadora").transition("fade out");
+        $("#menuMovil").transition("fade out");
+        }
+    });
+    $(".secondhead").visibility({
+        once: false,
+        //oculta y desoculta el menu según la clase "movil" o "computadora"
+        onBottomPassed: function() {
+        $("#menuComputadora").transition("fade in");
+        $("#menuMovil").transition("fade in");
+        },
+        onBottomPassedReverse: function() {
+        $("#menuComputadora").transition("fade out");
+        $("#menuMovil").transition("fade out");
         }
     });
     // create sidebar and attach to menu open
@@ -15,6 +30,7 @@ $(document).ready(function() {
     $('.special.cards .image').dimmer({
         on: 'hover'
     });
+    //menú dropdown
     $('.ui.dropdown')
       .dropdown()
     ;

@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
@@ -7,44 +7,149 @@
         <meta name="description" content="Sitio Web del Instituto Tabasco, ¡Fieles al deber!" />
         <meta name="keywords" content="Instituto Tabasco, educación, escuela, sjs, preescolar, primaria, secundaria, bachillerato" />
         <meta name="author" content="Adonay David Hernández Vales" />
-        <title>Instituto Tabasco | Preescolar</title>
+        <title>Instituto Tabasco | ¡Fieles al deber!</title>
         <link rel="shortcut icon" href="../.././img/ui/pagina/favicon.ico">
-        <link rel="stylesheet" href="../.././semantic/semantic.min.css"></link>
+        <link rel="stylesheet" href="../.././semantic/semantic.css"></link>
         <link rel="stylesheet" href="../.././css/body.css"></link>
     </head>
     <body>
-        <!-- Menú fijo de la sección preescolar -->
-        <div class="ui top fixed menu">
-            <div class="item">
-                <img alt="Instituto Tabasco" class="ui image" src="../.././img/ui/pagina/logo.png" width="50" height="50">
-            </div>
-            <a class="item" href="../../index.html">Inicio</a>
-            <div class="ui pointing dropdown link item">
-                <span class="text">Inscripciones</span>
-                <i class="dropdown icon"></i>
-                <div class="menu">
-                    <div class="header">Secciones</div>
-                    <div class="item">Preescolar</div>
-                    <div class="item">Primaria</div>
-                    <div class="item">Secundaria</div>
-                    <div class="item">Bachillerato</div>
-                </div>
-            </div>
-            <div class="right item">
-                <div class="right menu">
-                    <a href="https://wa.me/+529933128843" class="ui green button" target="_blank">
-                        <i class="whatsapp icon"></i>WhatsApp
-                    </a>
-                </div>
-                <div class="menu">
-                    <a href="https://institutotabasco.educamos.com" class="ui black button" target="_blank">
-                        <i class="book icon"></i>Educamos
-                    </a>
+        <!--Menú oculto cuando bajas la pagina, sólo para computadora-->
+        <div class="ui grid">
+            <div class="computer only large screen only column">
+                <div id="menuComputadora" class="ui top fixed hidden borderless menu">
+                    <div class="ui container">
+                        <!-- div del logo del header -->
+                        <div class="item">
+                            <div class="ui logo shape">
+                                <div class="sides">
+                                    <div class="active ui sides">
+                                        <img title="Instituto Tabasco" class="ui image" src="../.././img/ui/pagina/logo.png" width="50" height="50">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="active item" href="index.html">Inicio</a>
+                        <!-- Menú dropdown -->
+                        <div class="ui pointing dropdown link item">
+                            <span class="text">Inscripciones</span>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="header">Secciones</div>
+                                <a class="item" href="./paginas/secciones/preescolar.html">Preescolar</a>
+                                <a class="item">Primaria</a>
+                                <a class="item">Secundaria</a>
+                                <a class="item">Bachillerato</a>
+                            </div>
+                        </div>
+                        <a class="item" onClick="window.location='#ofertaEducativa'">Oferta educativa</a>
+                        <div class="right menu">
+                            <div class="item">
+                                <a href="https://wa.me/+529933128843" class="ui green button" target="_blank">
+                                    <i class="whatsapp icon"></i>WhatsApp
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://institutotabasco.educamos.com" class="ui black button" target="_blank">
+                                    <i class="book icon"></i>Educamos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Texto del header -->
+        <!--Menú oculto cuando bajas la pagina, sólo para móviles-->
+        <div class="ui grid">
+            <div class="mobile only tablet only widescreen only column">
+                <div id="menuMovil" class="ui top fixed hidden borderless menu">
+                    <div class="ui container">
+                        <a class="toc item"><i class="sidebar icon"></i></a>
+                        <!-- div del logo del header -->
+                        <div class="item">
+                            <div class="ui logo shape">
+                                <div class="sides">
+                                    <div class="active ui sides">
+                                        <img title="Instituto Tabasco" class="ui image" src="../.././img/ui/pagina/logo.png" width="50" height="50">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right item">
+                            <div class="right menu">
+                                <a href="https://wa.me/+529933128843" class="ui green button" target="_blank">
+                                    <i class="whatsapp icon"></i>WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Menú lateral-->
+        <div class="ui vertical inverted sidebar menu">
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <a class="active item header" href="../../index.html"><i class="home icon"></i>Inicio</a>
+            <div class="item">
+                <div class="header"><i class="sign-in icon"></i>Inscripciones</div>
+                <div class="menu">
+                    <div class="item">Preescolar</div>
+                </div>
+            </div>
+
+            <a class="item header" onClick="window.location='#ofertaEducativa'"><i class="graduation cap icon"></i>Oferta Educativa</a>
+            <a class="item header" href="https://institutotabasco.educamos.com"><i class="book icon"></i>Educamos</a>
+        </div>
+        <!-- Todo el contenido de la pagina -->
         <div class="pusher">
+            <div class="ui vertical center aligned container">
+                <div class="ui large primary pointing borderless menu">
+                    <!-- div del logo del header -->
+                    <div class="item">
+                        <div class="ui logo shape">
+                            <div class="sides">
+                                <div class="active ui sides">
+                                    <img title="Instituto Tabasco" class="ui image" src="../.././img/ui/pagina/logo.png" width="50" height="50">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin div del logo del header -->
+                    <div class="left item">
+                        <a class="toc item"><i class="sidebar icon"></i></a>
+                        <a class="active item" href="../../index.html">Inicio</a>
+                        <!-- Menú dropdown -->
+                        <div class="ui pointing dropdown link item">
+                            <span class="text">Inscripciones</span>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="header">Secciones</div>
+                                <a class="item" href=".././paginas/secciones/preescolar.html">Preescolar</a>
+                                <a class="item">Primaria</a>
+                                <a class="item">Secundaria</a>
+                                <a class="item">Bachillerato</a>
+                            </div>
+                        </div>
+                        <a class="item" onClick="window.location='#ofertaEducativa'">Oferta Educativa</a>
+                    </div>
+                    <!-- Botones del header, WhatsApp y SM Educamos -->
+                    <div class="right menu">
+                        <div class="right item">
+                            <a href="https://wa.me/+529933128843" class="ui green button" target="_blank">
+                                <i class="whatsapp icon"></i>WhatsApp
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://institutotabasco.educamos.com" class="ui black button" target="_blank">
+                                <i class="book icon"></i>Educamos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- encabezado de la página -->
             <div class="ui inverted vertical secondhead center aligned segment" style="background-image: url(../.././img/ui/pagina/preescolarheader.png);">
                 <div class="ui text container">
                     <div class="introduction">
@@ -52,7 +157,7 @@
                             <span id="mainTitle" class="library" style="font-size: 70px;">Preescolar</span>
                         </h1>
                         <h2 style="font-family: Matrix-Book; src: url(/fonts/Matrix-Book.ttf);">
-                            <span class="tagline" style="font-size: 40px;">Aquí va un texto inspirador</span>
+                            <span class="tagline" style="font-size: 40px;">Eres pequeño, pero puedes hacer cosas grandes</span>
                         </h2>
                     </div>
                 </div>
@@ -61,7 +166,7 @@
             <div class="ui vertical stripe segment">
                 <div class="ui aligned stackable center grid container">
                     <div class="row">
-                        <div class="ui container">
+                        <div class="ui grey raised segment">
                             <div class="ui doubling five column grid">
                                 <!-- clases especiales, todas las imágenes deben de ser de 1280 x 1280 -->
                                 <div class="blue column">
@@ -70,44 +175,124 @@
                                         <p>Para tus pequeños, que comience su
                                             desarrollo bilingüe a temprana edad
                                         </p>
-                                        <img src="../.././img/ui/pagina/preescolar-ingles.png" width="200" alt="image by brgfx on Freepik"></img>
+                                        <img src="../.././img/ui/pagina/preescolar-ingles.png" width="200" title="image by brgfx on Freepik"></img>
                                     </div>
                                 </div>
                                 <div class="pink column">
                                     <div class="ui container">
                                         <h1>Danza</h1>
                                         <p>Importante para su desarrollo motriz</p>
-                                        <img src="../.././img/ui/pagina/preescolar-danza.png" width="200" alt="image by brgfx on Freepik"></img>
+                                        <img src="../.././img/ui/pagina/preescolar-danza.png" width="200" title="image by brgfx on Freepik"></img>
                                     </div>
                                 </div>
                                 <div class="yellow column">
                                     <div class="ui container">
                                         <h1>Teatro</h1>
                                         <p>Aprenderán nuevas facetas de la vida</p>
-                                        <img src="../.././img/ui/pagina/preescolar-teatro.png" width="200" alt="image by brgfx on Freepik"></img>
+                                        <img src="../.././img/ui/pagina/preescolar-teatro.png" width="200" title="image by brgfx on Freepik"></img>
                                     </div>
                                 </div>
                                 <div class="black column">
                                     <div class="ui container">
                                         <h1>Música</h1>
                                         <p>La música es parte fundamental para un buen y feliz crecimiento</p>
-                                        <img src="../.././img/ui/pagina/preescolar-musica.png" width="200" alt="image by brgfx on Freepik"></img>
+                                        <img src="../.././img/ui/pagina/preescolar-musica.png" width="200" tilte="image by brgfx on Freepik"></img>
                                     </div>
                                 </div>
                                 <div class="teal column">
                                     <div class="ui container">
                                         <h1>Educación en la Fé</h1>
                                         <p>Fomentar la fe es primordial en las primeras etapas</p>
-                                        <img src="../.././img/ui/pagina/preescolar-edfe.png" width="200" alt="image by brgfx on Freepik"></img>
+                                        <img src="../.././img/ui/pagina/preescolar-edfe.png" width="200" title="image by brgfx on Freepik"></img>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="ui hidden divider"></div>
-                    <div class="row">
-                        <div class="center aligned column">
-                            <a class="ui red huge button">¿Todo listo?, Inscripciones aquí</a>
+                </div>
+                <div class="ui hidden divider"></div>
+                <!-- Descripción de la sección -->
+                <div class="ui aligned stackable center grid container">
+                    <div class="ui tall stacked segment">
+                        <div class="ui middle aligned stackable grid container">
+                            <div class="row">
+                                <div class="eight wide column">
+                                    <h1>El mejor preescolar</h1>
+                                    <p>Contamos con un ambiente seguro y divertido donde
+                                        nuestros alumnos más pequeños descubren su gran
+                                        potencial  y comienzan a desarrollar habilidades que
+                                        les permitirán empezar a conocer el mundo.
+                                    </p>
+                                </div>
+                                <div class="six wide right floated column">
+                                    <img class="ui large bordered rounded image" src="../.././img/ui/pagina/preescolar-descr.png"></img>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui hidden divider"></div>
+                <!-- Galería de fotos -->
+                <div class="ui vertical stripe container">
+                    <div class="ui container">
+                        <h1>Galería de fotos</h1>
+                        <div class="pa-carousel-widget" style="width:100%; height:480px; display:none;"
+                            data-link="https://photos.app.goo.gl/AeJwXT4MAySCTfE26"
+                            data-title="Preescolar"
+                            data-description="11 new items added to shared album">
+                            <object data="https://lh3.googleusercontent.com/pw/ADCreHdA7ivj9Xv64pRWhKg-DVIIhV0NCt4OkETsBI_bJrbhXA7SUEnyyOp6GSnDStGXyJTyrTRpGBvO_U7P6aNJgVz4KWm9lxc1lhP0G5SDPdEu3Z3CKog=w1920-h1080"></object>
+                            <object data="https://lh3.googleusercontent.com/pw/ADCreHfviMGTaphdgeYN_Eku213H0G4QA3zJaFhOO9ozXDPi0FSw5-XnC5hRK9N-v40Q9InIcGxUDRoA3Ub8M7iiusMYXXR6XeMEknmLNI5SlfCAnEX7RR0=w1920-h1080"></object>
+                            <object data="https://lh3.googleusercontent.com/pw/ADCreHciz7_VTKM1V8nosOqt3ArJQ3G8GRKLb_zu5fI0gLFtfEJHkjx3kRRfCyFBEhAH40FWujguQBXQFfjGduE_G9kYua94zkpZ4jfX4nWdFR_3UV0EidQ=w1920-h1080"></object>
+                            <object data="https://lh3.googleusercontent.com/pw/ADCreHcE9TK9118FH_QTQ5Ho_aF2WDWfEzNcumGS8GoOcmmEdLy-LW245tvIO6A5hlFWVCjkFchMPjL8Zq_tj0OzxxlGoroS_nQ0IKJHf-XmoKazlwxTb7I=w1920-h1080"></object>
+                            <object data="https://lh3.googleusercontent.com/pw/ADCreHduPEHniwzy0neSNtX4TSEsw8mQak4jV3UNdIGfdAzB2Fw2vx7U3hZy6wG6M_7Re8k5xRrKtBQhL6ER1XUKbRTpUNfPPN8QME7rOInE8sZzFsYGdUM=w1920-h1080"></object>
+                            <object data="https://lh3.googleusercontent.com/pw/ADCreHffgmvV7DEGIpQUzBTcJ0e0XGfTJqwFM_kyX_BABw93rtrEzKYDWwv5maX9z7dRFYR3M0JUZLISm2rrxFBBlHm0C7PXzbjfkWObi_C1EYcNxpsADW4=w1920-h1080"></object>
+                            <object data="https://lh3.googleusercontent.com/pw/ADCreHffjhMBFBUCpYnTnebRPQpBV999P3nklGDGHnQAoe6Uo6-VIDhhkYCfTBNQtgmVgsIW4mip42CinIKstFax-ywctTkSLhbTruvVjO92ubi2WT4SD20=w1920-h1080"></object>
+                            <object data="https://lh3.googleusercontent.com/pw/ADCreHdQBNv5vB6JAoNTAUXxPk4SJUNeaev_gULIw1GQDxUzspZ1tBG7siqX0hd34KnMaAETLf7isy0eTb45KsH3N0gR8CCyjOM2BJeRoz1E9bREtTVwLaw=w1920-h1080"></object>
+                            <object data="https://lh3.googleusercontent.com/pw/ADCreHdH05kuyZ2qifcuFMLoTuDxYNPR4N_tbCQk_oJgkp8jJqckiw8b8FO-seHN67eQfoUGrPHzOUv2J23TyKjm29TkEfj6Urbxo996gbutpYLG_GhnFTQ=w1920-h1080"></object>
+                            <object data="https://lh3.googleusercontent.com/pw/ADCreHdpZwN44uF03xbsnbkY2FchzcpAzPiJZUhHaow_RYjlhV4YutFWQtd5eELav2j9hDIjxSQU-isAfYTw6lf-Z6OIbdEIssetwf5dNnkyqJWxgHQoSw0=w1920-h1080"></object>
+                            <object data="https://lh3.googleusercontent.com/pw/ADCreHeC4kqbnTzXvVNEbCrS1SFJhTSlTpxbVkUENYU3-m_P2ZpRksd7Af09UiMNFM8LGt9VV5ZWydywAdhskR_YHfNagZ8CqSqMRB_CtFi4HLcsGYF8j30=w1920-h1080"></object>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui hidden divider"></div>
+                <!-- Botón de inscripciones -->
+                <div class="ui vertical segment">
+                    <div class="ui middle aligned stackable grid container">
+                        <div class="row">
+                            <div class="center aligned column">
+                                <a href=".././inscripciones/inscripciones-preescolar.html" class="ui red huge button">¿Todo listo?, Inscripciones aquí</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- esto es el pié de página -->
+            <div class="ui inverted vertical footer segment">
+                <div class="ui container">
+                    <div class="ui stackable inverted divided equal height stackable grid">
+                        <div class="three wide column">
+                            <h4 class="ui inverted header">Acerca de</h4>
+                            <div class="ui inverted link list">
+                                <a class="item" href="#root">Hecho por Adonay David Hernández Vales - Cualli Corp</a>
+                                <a class="item" href="#root">Aviso de privacidad</a>
+                                <a class="item" href="#root">Reportar un error</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui inverted header">Encuéntranos en</h4>
+                            <div class="ui inverted link list">
+                                <a class="ui facebook icon button" href="#root"><i class="facebook icon"></i></a>
+                                <a class="ui pink icon button" href="#root"><i class="instagram icon"></i></a>
+                                <a class="ui youtube icon button" href="#root"><i class="youtube icon"></i></a>
+                                <a class="ui white icon button" href="#root"><i class="envelope icon"></i></a>
+                            </div>
+                        </div>
+                        <div class="seven wide column">
+                            <h4 class="ui inverted header">Instituto Tabasco</h4>
+                            <p>
+                                Hecho con amor y con tecnologías de código abierto, más información acerca
+                                de su desarrollo <a href="#">aquí</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -116,5 +301,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
         <script src="../.././js/menu.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
     </body>
 </html>
