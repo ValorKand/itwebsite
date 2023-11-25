@@ -11,6 +11,7 @@
         <link rel="shortcut icon" href="./img/ui/pagina/favicon.ico">
         <link rel="stylesheet" href="./semantic/semantic.css"></link>
         <link rel="stylesheet" href="./css/body.css"></link>
+        <link rel="stylesheet" href="./css/slider.css"></link>
     </head>
     <body id="root">
         <!--Menú oculto cuando bajas la pagina, sólo para computadora-->
@@ -98,7 +99,6 @@
                     <div class="item">Preescolar</div>
                 </div>
             </div>
-
             <a class="item header" onClick="window.location='#ofertaEducativa'"><i class="graduation cap icon"></i>Oferta Educativa</a>
             <a class="item header" href="https://institutotabasco.educamos.com"><i class="book icon"></i>Educamos</a>
         </div>
@@ -172,10 +172,64 @@
                     </div>
                 </div>
             </div>
+            <!-- Div de banners publicitarios -->
+            <!-- las imágenes deben ser de 1410 x 280 pc y móviles 360 x 400 -->
+            <div class="ui center aligned segment">
+                <section id="container-slider">
+                    <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="arrow circle left icon"></i></a>
+                    <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="arrow circle right icon"></i></a>
+                    <ul class="listslider">
+                        <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+                        <li><a itlist="itList_1" href="#"></a></li>
+                        <li><a itlist="itList_2" href="#"></a></li>
+                    </ul>
+                    <ul class="slide" id="slider">
+                        <li class="blurring dimmable image" style="background-image: url('https://lh3.googleusercontent.com/pw/ADCreHcGt5TIEQkIxfWgC8v5YP4A1mXqEVtMFfMz3YGTVlPlkWKqSd7ODuqTN6j8dyt_L63NcAszyceHuKppGXwACm1fpsMTtGBuZ-vutQ1z9rNqYR7m0OvNFQXnryE__wc_Rph9vNcHcQVF0TwzIxaj32Cu=w1440-h400-s-no?authuser=2'); z-index:0; opacity: 1;">
+                            <div class="ui inverted dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="content_slider">
+                                            <!-- Aquí puede ir contenido de texto para el slider -->
+                                            <button class="ui inverted button">Ver más</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="blurring dimmable image" style="background-image: url('https://cdn.pixabay.com/photo/2018/02/20/10/28/business-3167295_960_720.jpg'); ">
+                            <div class="ui inverted dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="content_slider">
+                                            <!-- Aquí puede ir contenido de texto para el slider -->
+                                            <button class="ui inverted button">Ver más</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="blurring dimmable image" style="background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/42/typing-849806_960_720.jpg'); ">
+                            <div class="ui inverted dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="content_slider">
+                                            <!-- Aquí puede ir contenido de texto para el slider -->
+                                            <button class="ui inverted button">Ver más</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                   </ul>
+                 </section>
+            </div>
             <div class="ui hidden divider"></div>
-            <div id="quienesSomos" class="ui hidden divider"></div>
             <div class="ui hidden divider"></div>
-            <!-- Quíenes somos... -->
+            <div class="ui hidden divider"></div>
+            <!-- Quiénes somos... -->
             <div class="ui vertical stripe segment">
                 <div class="ui middle aligned stackable grid container">
                     <div class="row">
@@ -183,8 +237,7 @@
                             <h3 class="ui header">¿Quiénes Somos?</h3>
                             <p class="justificado">
                                 Somos una Institución Educativa Católica,
-                                identificada con la espiritualidad de la
-                                Congregación de Siervas de Jesús Sacramentado.
+                                parte de la <a href="https://www.escuelassjs.org/">Congregación de Siervas de Jesús Sacramentado.</a>
                                 Nuestro centro es Jesucristo Eucaristía y vivimos bajo
                                 la protección de la Santísima Virgen María.
                             </p>
@@ -196,6 +249,7 @@
                                 </div>
                             </p>
                         </div>
+                        <!-- Aquí va el slider de conócenos xd -->
                         <div class="six wide right floated column">
                             <img class="ui large bordered rounded image" src="./img/ui/pagina/conocenos-image.png" />
                         </div>
@@ -428,5 +482,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
         <script src="./js/menu.js"></script>
+        <script src="./js/slider.js"></script>
     </body>
 </html>

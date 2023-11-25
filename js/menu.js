@@ -30,6 +30,10 @@ $(document).ready(function() {
     $('.special.cards .image').dimmer({
         on: 'hover'
     });
+    //blur para el slider
+    $('.slide .image').dimmer({
+        on: 'hover'
+    });
     //menú dropdown
     $('.ui.dropdown')
       .dropdown()
