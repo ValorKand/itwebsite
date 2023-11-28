@@ -35,7 +35,7 @@
                             <span class="text">Inscripciones</span>
                             <i class="dropdown icon"></i>
                             <div class="menu">
-                                <div class="header">Secciones</div>
+                                <div class="header">Nivel</div>
                                 <a class="item" href="./paginas/secciones/preescolar.html">Preescolar</a>
                                 <a class="item">Primaria</a>
                                 <a class="item">Secundaria</a>
@@ -96,11 +96,14 @@
             <div class="item">
                 <div class="header"><i class="sign-in icon"></i>Inscripciones</div>
                 <div class="menu">
-                    <div class="item">Preescolar</div>
+                    <div href="./paginas/secciones/preescolar.html" class="item">Preescolar</div>
+                    <div href="#" class="item">Primaria</div>
+                    <div href="#" class="item">Secundaria</div>
+                    <div href="#" class="item">Bachillerato</div>
                 </div>
             </div>
             <a class="item header" onClick="window.location='#ofertaEducativa'"><i class="graduation cap icon"></i>Oferta Educativa</a>
-            <a class="item header" href="https://institutotabasco.educamos.com"><i class="book icon"></i>Educamos</a>
+            <a class="item header" href="https://institutotabasco.educamos.com" target="_blank"><i class="book icon"></i>Educamos</a>
         </div>
         <!-- Todo el contenido de la pagina -->
         <div class="pusher">
@@ -108,7 +111,7 @@
                 <div class="mobile only column">
                     <div class="ui hidden divider"></div>
                 </div>
-                <!-- Menú principal -->
+                <!-- Menú principal del index -->
                 <div class="ui container">
                     <div class="ui large primary pointing borderless menu">
                         <!-- div del logo del header -->
@@ -130,7 +133,7 @@
                                 <span class="text">Inscripciones</span>
                                 <i class="dropdown icon"></i>
                                 <div class="menu">
-                                    <div class="header">Secciones</div>
+                                    <div class="header">Nivel</div>
                                     <a class="item" href="./paginas/secciones/preescolar.html">Preescolar</a>
                                     <a class="item">Primaria</a>
                                     <a class="item">Secundaria</a>
@@ -230,7 +233,7 @@
             <div class="ui hidden divider"></div>
             <div class="ui hidden divider"></div>
             <!-- Quiénes somos... -->
-            <div class="ui vertical stripe segment">
+            <div id="quienesSomos" class="ui vertical stripe segment">
                 <div class="ui middle aligned stackable grid container">
                     <div class="row">
                         <div class="eight wide column">
@@ -251,7 +254,19 @@
                         </div>
                         <!-- Aquí va el slider de conócenos xd -->
                         <div class="six wide right floated column">
-                            <img class="ui large bordered rounded image" src="./img/ui/pagina/conocenos-image.png" />
+                            <!-- <img class="ui large bordered rounded image" src="./img/ui/pagina/conocenos-image.png" /> -->
+                            <div class="ui large bordered rounded image pa-carousel-widget" style="width:650px; height:350px; display:none;"
+                              data-link="https://photos.app.goo.gl/WJJCbXf5L95A8SeX9"
+                              data-title="¿Quiénes somos?"
+                              data-description="6 new items added to shared album"
+                              data-background-color="#ffffff">
+                              <object data="https://lh3.googleusercontent.com/pw/ADCreHdI0yVLiBamOBolpEy8-bASI2OG0ClvDlVuB-Cdc_W1zsxPXATaqk09kgdl5pHjAVFMJCe2DZKBBO50F0Pi8-TQbSbtTKfVmuKcKA__O-ZbGuu9618=w1080-h1080"></object>
+                              <object data="https://lh3.googleusercontent.com/pw/ADCreHefa-I_NwYyK_NE0BWO-hyz8hFma4LHhlV-OywgYyv1aLdoNWcofFYbd0mWxwIDPfjSR8vyH9yFvYp26fAT-Dv5s1bTzXwnjzYxsG6T_TqkYzFEXJQ=w1080-h1080"></object>
+                              <object data="https://lh3.googleusercontent.com/pw/ADCreHd_IH63z5H2U2mdLNQHL_DBSuQCTNvwWTDsDZ0aQdP-Eki5zQrJk2YB5bTv3H87NMrbDSLGCZ_bPLTFp6zeoPgdFPlmyMlkyQdg98UONnrPoiZpk7A=w1080-h1080"></object>
+                              <object data="https://lh3.googleusercontent.com/pw/ADCreHeQNFHi6aMyC0gJnmEDl-2PSTHSX_0yAhKvN44RQfA6pzJUOElrwK1GY6MtW7HppAuJsVHssoLs3Qy6RnAndRKrHuG5TDY_ArueT2oeZPaLDkuImsM=w1080-h1080"></object>
+                              <object data="https://lh3.googleusercontent.com/pw/ADCreHfgYMB8IMv0phx9QCgxCzi3Ti-6nhWOAvqnHusAXimMKT-QS3MtpmRf4JR630fNKVpIjsbRypFGWAE1YOTY1ZF1qFOEHiKeUq8q50S6OAg4z5IEQTo=w1080-h1080"></object>
+                              <object data="https://lh3.googleusercontent.com/pw/ADCreHcJiY0AQ0TlkJK0KUMQJVR8rNG6rohzwzZCrXTj30pk1jcJRoOEhdRmJ4pslI6KuQZqGd4HnllZdQyJD9TyLlsYdRI2dvVzcOdMG7cMzvmvqcvHoTg=w1080-h1080"></object>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -311,7 +326,7 @@
                                 <img src="./img/ui/pagina/preescolar.png">
                             </div>
                             <div class="content">
-                                <a class="header">Preescolar</a>
+                                <a href="./paginas/secciones/preescolar.html" class="header">Preescolar</a>
                                 <div class="meta">
                                     <span class="text">Donde los pequeños aprenden y se divierten</span>
                                 </div>
@@ -330,7 +345,7 @@
                                 <img src="./img/ui/pagina/primaria.png">
                             </div>
                             <div class="content">
-                                <a class="header">Primaria</a>
+                                <a href="./paginas/secciones/primaria.html" class="header">Primaria</a>
                                 <div class="meta">
                                     <span class="text">Esencial para el desarollo de los niños</span>
                                 </div>
@@ -349,7 +364,7 @@
                                 <img src="./img/ui/pagina/secundaria.png">
                             </div>
                             <div class="content">
-                                <a class="header">Secundaria</a>
+                                <a href="./paginas/secciones/secundaria.html" class="header">Secundaria</a>
                                 <div class="meta">
                                     <span class="text">El descubrimiento de habilidades no tiene límites</span>
                                 </div>
@@ -368,7 +383,7 @@
                                 <img src="./img/ui/pagina/bachillerato.png">
                             </div>
                             <div class="content">
-                                <a class="header">Bachillerato (ICHT)</a>
+                                <a href="./paginas/secciones/bachillerato.html" class="header">Bachillerato (ICHT)</a>
                                 <div class="meta">
                                     <span class="text">Orientando a los jóvenes a un mejor futuro</span>
                                 </div>
@@ -393,35 +408,35 @@
                                 <div class="column">
                                     <div class="ui container">
                                         <!-- Todas las imágenes deben ser de 1280 x 1280 -->
-                                        <img src="./img/ui/pagina/internet.png" width="150"></img>
+                                        <img src="./img/ui/pagina/internet.png" width="100%"></img>
                                         <h1>Conexión a internet</h1>
                                         <p>WiFi por todas partes, por donde camines, ahí habrá internet</p>
                                     </div>
                                 </div>
                                 <div class="column">
                                     <div class="ui container">
-                                        <img src="./img/ui/pagina/clima.png" width="150"></img>
+                                        <img src="./img/ui/pagina/clima.png" width="100%"></img>
                                         <h1>Aulas climatizadas</h1>
                                         <p>En todos los niveles habidos y por haber</p>
                                     </div>
                                 </div>
                                 <div class="column">
                                     <div class="ui container">
-                                        <img src="./img/ui/pagina/laboratorio.png" width="150"></img>
+                                        <img src="./img/ui/pagina/laboratorio.png" width="100%"></img>
                                         <h1>Laboratorios especializados</h1>
                                         <p>De cómputo, música, química y más para añadir a tu educación algo más que solo clases regulares</p>
                                     </div>
                                 </div>
                                 <div class="column">
                                     <div class="ui container">
-                                        <img src="./img/ui/pagina/cancha.png" width="150"></img>
+                                        <img src="./img/ui/pagina/cancha.png" width="100%"></img>
                                         <h1>Espacios deportivos</h1>
                                         <p>Canchas al aire libre, para que tomes el aire fresco</p>
                                     </div>
                                 </div>
                                 <div class="column">
                                     <div class="ui container">
-                                        <img src="./img/ui/pagina/plataforma.png" width="150"></img>
+                                        <img src="./img/ui/pagina/plataforma.png" width="100%"></img>
                                         <h1>Plataforma educativa</h1>
                                         <p>Mantente al tanto del desempeño de tus hijos estés donde estés</p>
                                     </div>
@@ -483,5 +498,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
         <script src="./js/menu.js"></script>
         <script src="./js/slider.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
     </body>
 </html>
