@@ -36,6 +36,13 @@ $(document).ready(function() {
     });
     //menú dropdown
     $('.ui.dropdown')
-      .dropdown()
+        .dropdown()
+    ;
+    //acordeones
+    $('.ui.accordion')
+        .accordion()
+    ;
+    $('.ver.mas')
+        .popup()
     ;
 });

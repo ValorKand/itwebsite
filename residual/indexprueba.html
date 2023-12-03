@@ -134,77 +134,67 @@
                     </div>
                 </div>
             </div>
-            <div class="ui inverted vertical masthead center aligned segment" style="background-image: url(./img/ui/pagina/itheader.png);">
-                <div class="mobile only column">
-                    <div class="ui hidden divider"></div>
-                </div>
-                <!-- Menú principal del index -->
-                <div class="ui container">
-                    <div class="ui large primary pointing borderless menu">
-                        <!-- div del logo del header -->
-                        <div class="item">
-                            <div class="ui logo shape">
-                                <div class="sides">
-                                    <div class="active ui sides">
-                                        <img title="Instituto Tabasco" class="ui image" src="./img/ui/pagina/logo.png" width="50" height="50">
-                                    </div>
-                                </div>
+            <!-- Menú principal de la página -->
+            <div class="ui masthead large primary pointing borderless menu">
+                <!-- div del logo del header -->
+                <div class="item">
+                    <div class="ui logo shape">
+                        <div class="sides">
+                            <div class="active ui sides">
+                                <img title="Instituto Tabasco" class="ui image" src="./img/ui/pagina/logo.png" width="50" height="50">
                             </div>
-                        </div>
-                        <!-- Fin div del logo del header -->
-                        <div class="left item">
-                            <a class="toc item"><i class="sidebar icon"></i></a>
-                            <a class="active item" href="index.html">Inicio</a>
-                            <!-- Menú dropdown -->
-                            <div class="ui pointing dropdown link item">
-                                <span class="text">Inscripciones</span>
-                                <i class="dropdown icon"></i>
-                                <div class="menu">
-                                    <div class="header">Nivel</div>
-                                    <a class="item" href="./paginas/secciones/preescolar.html">Preescolar</a>
-                                    <a class="item">Primaria</a>
-                                    <a class="item">Secundaria</a>
-                                    <a class="item">Bachillerato</a>
-                                </div>
-                            </div>
-                            <a class="item" onClick="window.location='#ofertaEducativa'">Oferta Educativa</a>
-                        </div>
-                        <!-- Botones del header, WhatsApp y SM Educamos -->
-                        <div class="right item">
-                            <div class="right menu">
-                                <a href="https://wa.me/+529933128843" class="ui green button" target="_blank">
-                                    <i class="whatsapp icon"></i>WhatsApp
-                                </a>
-                            </div>
-                            <div class="menu">
-                                <a href="https://institutotabasco.educamos.com" class="ui black button" target="_blank">
-                                    <i class="book icon"></i>Educamos
-                                </a>
+                            <div class="ui sides">
+                                <p>Instituto Tabasco</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="ui text container">
-                    <div class="introduction">
-                        <h1 id="mainTitle" class="ui inverted header">
-                            <span class="library">Instituto Tabasco</span>
-                        </h1>
-                        <h2 id="subTitle">
-                            <span class="tagline">¡Fieles al deber!</span>
-                        </h2>
-                    </div>
-                    <div class="ui huge hidden divider"></div>
-                    <div type="submit" onClick="window.location='#quienesSomos'" class="ui animated fade red circular button" tabindex="0">
-                        <div class="visible content">
-                            <i class="down arrow icon"></i>Conócenos
+                <!-- Fin div del logo del header -->
+                <div class="left item">
+                    <a class="toc item"><i class="sidebar icon"></i></a>
+                    <a class="active item" href="../../index.html">Inicio</a>
+                    <!-- Menú dropdown inscripciones -->
+                    <div class="ui pointing dropdown link item">
+                        <span class="text">Inscripciones</span>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="header">Nivel</div>
+                            <a href=".././inscripciones/inscripciones-preescolar.html" class="item">Preescolar</a>
+                            <a href=".././inscripciones/inscripciones-primaria.html" class="item">Primaria</a>
+                            <a href=".././inscripciones/inscripciones-secundaria.html" class="item">Secundaria</a>
+                            <a href=".././inscripciones/inscripciones-bachillerato.html" class="item">Bachillerato</a>
                         </div>
-                        <div class="hidden content"><i class="down arrow icon"></i></div>
+                    </div>
+                    <!-- Menú dropdown oferta educativa -->
+                    <div class="ui pointing dropdown link item">
+                        <span class="text">Oferta educativa</span>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="header">Nivel</div>
+                            <a href="preescolar.html" class="active item">Preescolar</a>
+                            <a href="primaria.html" class="item">Primaria</a>
+                            <a href="secundaria.html" class="item">Secundaria</a>
+                            <a href="bachillerato.html" class="item">Bachillerato</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Botones del header, WhatsApp y SM Educamos -->
+                <div class="right menu">
+                    <div class="right item">
+                        <a href="https://wa.me/+529933128843" class="ui green button" target="_blank">
+                            <i class="whatsapp icon"></i>WhatsApp
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://institutotabasco.educamos.com" class="ui black button" target="_blank">
+                            <i class="book icon"></i>Educamos
+                        </a>
                     </div>
                 </div>
             </div>
             <!-- Div de banners publicitarios -->
             <!-- las imágenes deben ser de 1410 x 280 pc y móviles 360 x 400 -->
-            <div class="ui center aligned segment">
+            <div class="ui center aligned vertical segment">
                 <section id="container-slider">
                     <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="arrow circle left icon"></i></a>
                     <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="arrow circle right icon"></i></a>
@@ -215,7 +205,7 @@
                     </ul>
                     <ul class="slide" id="slider">
                         <li class="blurring dimmable image" style="background-image: url('https://lh3.googleusercontent.com/pw/ADCreHcGt5TIEQkIxfWgC8v5YP4A1mXqEVtMFfMz3YGTVlPlkWKqSd7ODuqTN6j8dyt_L63NcAszyceHuKppGXwACm1fpsMTtGBuZ-vutQ1z9rNqYR7m0OvNFQXnryE__wc_Rph9vNcHcQVF0TwzIxaj32Cu=w1440-h400-s-no?authuser=2'); z-index:0; opacity: 1;">
-                            <div class="ui inverted dimmer">
+                            <div class="ui bottom aligned inverted dimmer">
                                 <div class="content">
                                     <div class="center">
                                         <div class="content_slider">
@@ -365,7 +355,7 @@
                                 <div class="ui inverted dimmer">
                                     <div class="content">
                                         <div class="center">
-                                            <a href="./paginas/secciones/primaria.html" class="ui inverted button">Descubre Más</a>
+                                            <div class="ui inverted button">Descubre Más</div>
                                         </div>
                                     </div>
                                 </div>
@@ -384,7 +374,7 @@
                                 <div class="ui inverted dimmer">
                                     <div class="content">
                                         <div class="center">
-                                            <a href="./paginas/secciones/secundaria.html" class="ui inverted button">Descubre Más</a>
+                                            <div class="ui inverted button">Descubre Más</div>
                                         </div>
                                     </div>
                                 </div>
@@ -403,7 +393,7 @@
                                 <div class="ui inverted dimmer">
                                     <div class="content">
                                         <div class="center">
-                                            <a  href="./paginas/secciones/bachillerato.html" class="ui inverted button">Descubre Más</a>
+                                            <div class="ui inverted button">Descubre Más</div>
                                         </div>
                                     </div>
                                 </div>

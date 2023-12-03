@@ -11,6 +11,7 @@
         <link rel="shortcut icon" href="../.././img/ui/pagina/favicon.ico">
         <link rel="stylesheet" href="../.././semantic/semantic.css"></link>
         <link rel="stylesheet" href="../.././css/body.css"></link>
+        <link rel="stylesheet" href="../.././css/componentes.css"></link>
     </head>
     <body>
         <!--Menú oculto cuando bajas la pagina, sólo para computadora-->
@@ -41,6 +42,7 @@
                                 <a href=".././inscripciones/inscripciones-bachillerato.html" class="item">Bachillerato</a>
                             </div>
                         </div>
+                        <!-- TODO: siempre cambiar el active de acuerdo a la sección. -->
                         <!-- Menú dropdown oferta educativa -->
                         <div class="ui pointing dropdown link item">
                             <span class="text">Oferta educativa</span>
@@ -186,11 +188,15 @@
             <div class="ui inverted vertical secondhead center aligned segment" style="background-image: url(../.././img/ui/pagina/preescolarheader.png);">
                 <div class="ui text container">
                     <div class="introduction">
-                        <h1 class="ui inverted header" style="font-family: Matrix-Book; font-weight: bold; src: url(../.././fuentes/Matrix-Book.ttf);">
-                            <span id="mainTitle" class="library" style="font-size: 70px;">Primiaria</span>
+                        <h1 id="secondTitle" class="primaria ui inverted header">
+                            <span class="library">Primaria</span>
                         </h1>
-                        <h2 style="font-family: Matrix-Book; src: url(/fonts/Matrix-Book.ttf);">
-                            <span class="tagline" style="font-size: 40px;">Un paso más a tu crecimiento, empieza a descubrir</span>
+                        <h2 id="secondsubTitle">
+                            <span class="tagline">
+                                Tenemos la mejor educación básica, completa en
+                                todos los aspectos, educativa, moral y social,
+                                para que el crecimiento de tus niños sea el mejor.
+                            </span>
                         </h2>
                     </div>
                 </div>
@@ -202,17 +208,19 @@
                         <div class="ui grey raised segment">
                             <div class="ui doubling four column grid">
                                 <!-- clases especiales, todas las imágenes deben de ser de 1280 x 1280 -->
-                                <div class="pink column">
+                                <div class="blue column">
                                     <div class="ui container">
                                         <h1>Inglés</h1>
-                                        <p>Desarrolla tus habilidades lingüísticas con un segundo idioma.</p>
+                                        <p>Para tus pequeños, que comience su
+                                            desarrollo bilingüe a temprana edad
+                                        </p>
                                         <img src="../.././img/ui/pagina/preescolar-ingles.png" width="100%" title="image by brgfx on Freepik"></img>
                                     </div>
                                 </div>
-                                <div class="orange column">
+                                <div class="pink column">
                                     <div class="ui container">
                                         <h1>Danza</h1>
-                                        <p>Explora nuevas formas de expresarte y diviértete.</p>
+                                        <p>Importante para su desarrollo motriz</p>
                                         <img src="../.././img/ui/pagina/preescolar-danza.png" width="100%" title="image by brgfx on Freepik"></img>
                                     </div>
                                 </div>
@@ -235,20 +243,79 @@
                     </div>
                 </div>
                 <div class="ui hidden divider"></div>
-                <!-- Descripción de la sección -->
+                <div class="ui hidden divider"></div>
+                <div class="ui hidden divider"></div>
+                <div class="ui divider"></div>
+                <div class="ui hidden divider"></div>
+                <div class="ui hidden divider"></div>
+                <div class="ui hidden divider"></div>
+                <!-- Sección de educación especial -->
                 <div class="ui aligned stackable center grid container">
                     <div class="ui tall stacked segment">
                         <div class="ui middle aligned stackable grid container">
                             <div class="row">
                                 <div class="eight wide column">
-                                    <h1>Primaria de calidad</h1>
-                                    <p>Tenemos la mejor educación básica, completa en
-                                        todos los aspectos, educativa, moral y social,
-                                        para que el crecimiento de tus niños sea el mejor.
+                                    <h1>Psicopedagogía</h1>
+                                    <p class="justificado">Aquí va la descripción de mariluca.
                                     </p>
                                 </div>
                                 <div class="six wide right floated column">
-                                    <img class="ui large bordered rounded image" src="../.././img/ui/pagina/preescolar-descr.png"></img>
+                                    <img class="ui large bordered rounded image" src="../.././img/ui/pagina/preescolar-educacionespecial.jpg"></img>
+                                </div>
+                                <!-- Descripción del área -->
+                                <div class="row">
+                                    <div class="ui accordion">
+                                        <div class="computer only ui stackable grid container">
+                                            <div class="title">
+                                                <h2 class="ui header"><i class="dropdown icon"></i>Ver más sobre esta área…</h2>
+                                            </div>
+                                            <div class="content">
+                                                <div class="ui grid container">
+                                                    <div class="eight wide column">
+                                                        <p class="justificado">
+                                                            Los alumnos con discapacidad son aquellos que, por razón congénita o adquirida,
+                                                            tienen una o más deficiencias de carácter físico, intelectual o sensorial,
+                                                            ya sea permanente o temporal, y que al interactuar con las barreras que le impone
+                                                            el entorno social, pueden impedir su inclusión plena y efectiva, en igualdad de
+                                                            condiciones con los demás. (Lic. Lorena Zumbardo)
+                                                            <div class="ui list">
+                                                                <!-- los data-title son el popup para la información -->
+                                                                <div class="ui header">
+                                                                    <p>Objetivo del área de educación especial del Instituto Tabasco:</p>
+                                                                </div>
+                                                                <div class="ui warning message item ver mas" data-title="…" data-html="<div class='header'>…</div><p class='justificado'>en los niveles de preescolar y primaria,
+                                                                    a los alumnos y alumnas que enfrentan barreras para el aprendizaje y
+                                                                    la participación, por presentar una condición de discapacidad, capacidades
+                                                                    y aptitudes sobresalientes o dificultades en el desarrollo de competencias de los
+                                                                    campos de formación del currículo.</p>">
+                                                                    <p>
+                                                                        <b>👩‍🏫</b>Implementar una modalidad de atención con servicios educativos
+                                                                        escolarizados y de apoyo[…]
+                                                                    </p>
+                                                                </div>
+                                                                <div class="ui warning message item ver mas" data-html="<div class='header'>…</div><p class='justificado'>orientación de estrategias de aprendizaje en relación a los cuatro pilares de la educación,
+                                                                    los lineamientos de la Secretaría de Educación Pública y la formación cristiana bajo
+                                                                    el carisma Eucarístico-Mariano.</p>">
+                                                                    <p>
+                                                                        <b>🫱🏻‍🫲🏼</b>Apoyar a los docentes en el establecimiento de sistemas motivacionales[…]
+                                                                    </p>
+                                                                </div>
+                                                                <div class="ui warning message item ver mas" data-html="<div class='header'>*</div><p class='justificado'>Necesidades Educativas Especiales</p>">
+                                                                    <p>
+                                                                        <b>👨‍👩‍👧‍👦</b>Brindar atención a padres de familia con orientaciones, sugerencias y
+                                                                        estrategias de atención y seguimiento de los alumnos y alumnas con *NEE.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </p>
+                                                    </div>
+                                                    <div class="six wide right floated column">
+                                                        <img class="ui large bordered rounded image" src="../.././img/ui/pagina/educacionespecial.png" title="Imagen de vectorjuice en Freepik">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

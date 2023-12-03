@@ -14,8 +14,8 @@
     position: relative;
     display: block;
     width: 100%;
-    height: 30vh;
-    min-height: 280px;
+    height: 38vh;
+    min-height: 100%;
 }
 
 #slider li {
