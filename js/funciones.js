@@ -42,7 +42,14 @@ $(document).ready(function() {
     $('.ui.accordion')
         .accordion()
     ;
+    // popups
     $('.ver.mas')
         .popup()
     ;
+    // Modal (ventana sobrepuesta)
+    $('#avisoPrivacidad').click(function() {
+        $('.small.modal')
+            .modal('show')
+        ;
+    });
 });
