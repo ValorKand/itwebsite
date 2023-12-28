@@ -1,3 +1,5 @@
+@import url('Matrix-Book.css');
+
 .bocadito {
     background-color: #000000;
     color: #ffffff;
@@ -30,7 +32,6 @@
 
 #mainTitle, #subTitle, #secondTitle, #secondsubTitle, #thirdTitle, #thirdsubTitle {
     font-family: Matrix-Book;
-    src: url('.././fuentes/Matrix-Book.ttf');
 }
 
 #mainTitle {
