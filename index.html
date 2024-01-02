@@ -16,7 +16,7 @@
     </head>
     <body id="root">
         <!-- Modal (ventana emergente) de aviso de privacidad -->
-        <div class="ui small modal">
+        <div id="privacidad" class="ui small modal">
             <i class="close icon"></i>
             <div class="header">Aviso de privacidad integral</div>
             <div class="justificado content">
@@ -608,7 +608,7 @@
                     <div class="ui hidden divider"></div>
                     <div class="row">
                         <div class="center aligned column">
-                            <a class="ui red huge button">Conoce más de nuestras instalaciones, recorrido 360° <i class="lemon icon"></i></a>
+                            <a href="./paginas/extra/instalaciones.html" target="_blank" class="ui red huge button">Conoce más de nuestras instalaciones, recorrido 360° <i class="lemon icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -620,7 +620,13 @@
                         Si es así, puedes dar click en el botón de abajo y ponte en
                         contacto con nosotros.
                     </p>
-                    <a class="ui large primary button"><i class="check icon"></i>Me interesa</a>
+                    <a id="bolsaTrabajo" class="ui large primary button"><i class="check icon"></i>Me interesa</a>
+                    <div id="bolsa" class="ui modal">
+                        <div class="ui segment">
+                            <h1>Da clic en el siguiente botón, te llevará a una ventana nueva de correo, y proporciona tu Curriculum</h1>
+                            <a href="mailto:institutotabasco.edu@gmail.com" class="ui button">Enviar documentos</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Pié de página -->

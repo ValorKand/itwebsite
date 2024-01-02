@@ -1,1 +1,4 @@
-var viewer = new FORGE.Viewer("container");
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "https://pannellum.org/images/alma.jpg"
+});
