@@ -46,19 +46,16 @@ $(document).ready(function() {
     $('.ver.mas')
         .popup()
     ;
-    // Modal de aviso de privacidad
+    // Modal de aviso de privacidad xd
     $('#avisoPrivacidad').click(function() {
         $('#privacidad')
             .modal('show')
         ;
     });
-
-    // Modal de bolsa de trabajo
+    // Modal de aviso de bolsa de trabajop3 xd
     $('#bolsaTrabajo').click(function() {
         $('#bolsa')
             .modal('show')
         ;
     });
-    //embed de vista panoramica
-    $('.ui.embed').embed();
 });

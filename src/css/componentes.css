@@ -50,11 +50,11 @@
 }
 
 #mainTitle span {
-    font-size: 90px;
+    font-size: 150%;
 }
 
 #secondTitle span {
-    font-size: 70px;
+    font-size: 150%;
 }
 
 #secondTitle.bachillerato span {
@@ -109,7 +109,7 @@
 }
 
 #subTitle span {
-    font-size: 40px;
+    font-size: 150%;
 }
 
 @media (max-width: 479px) {
