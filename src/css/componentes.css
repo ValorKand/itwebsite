@@ -117,3 +117,30 @@
         padding-top: 5%;
     }
 }
+
+/*fondos de las secciones*/
+
+#headIndex {
+    background-image: url('../.././img/ui/pagina/itheader.png');
+    background-size: cover;
+}
+
+#headPreescolar {
+    background-image: url('../.././img/ui/pagina/preescolarheader.png');
+    background-size: cover;
+}
+
+#headPrimaria {
+    background-image: url('../.././img/ui/pagina/primariaheader.png');
+    background-size: cover;
+}
+
+#headSecundaria {
+    background-image: url('../.././img/ui/pagina/secundariaheader.png');
+    background-size: cover;
+}
+
+#headBachillerato {
+    background-image: url('../.././img/ui/pagina/bachilleratoheader.jpg');
+    background-size: cover;
+}
