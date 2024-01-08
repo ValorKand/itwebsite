@@ -58,6 +58,4 @@ $(document).ready(function() {
             .modal('show')
         ;
     });
-
-    //a ver si funciona esta cosa
 });
