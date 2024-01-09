@@ -26,6 +26,7 @@ body {
 .thirdhead.segment {
     min-height: 100px;
     padding: 1em 0em;
+    margin-bottom: ;
 }
 
 .masthead .logo.item img {
@@ -55,7 +56,7 @@ body {
 .masthead h1.ui.header {
     margin-top: 0em;
     margin-bottom: 0em;
-    font-size: 4em;
+    font-size: 350%;
     font-weight: normal;
 }
 
@@ -67,8 +68,9 @@ body {
 }
 
 .thirdhead h1.ui.header {
-    margin-top: 1em;
+    margin-top: 0.1em;
     margin-bottom: 0em;
+    padding-bottom: 0.2em;
     font-size: 3em;
     font-weight: 500;
 }
@@ -131,6 +133,7 @@ body {
     display: none;
 }
 
+/* Manipula las vistas para móvil y resoluciones similares */
 @media only screen and (max-width: 700px) {
     .ui.fixed.menu {
         display: none !important;
@@ -154,7 +157,7 @@ body {
     }
 
     .thirdhead.segment {
-        min-height: 250px;
+        min-height: 100px;
     }
 
     .masthead h1.ui.header {
