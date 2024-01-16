@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-entrada-snchez-magallanes",
-      "name": "Entrada Sánchez Magallanes",
+      "id": "0-entrada-sanchez-magallanes",
+      "name": "Entrada Sanchez Magallanes",
       "levels": [
         {
           "tileSize": 256,
@@ -22,11 +22,11 @@ var APP_DATA = {
           "size": 2048
         }
       ],
-      "faceSize": 1919,
+      "faceSize": 2000,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 0.03490658503988797,
+        "pitch": -0.023209091101227486,
+        "fov": 1.5036239095726056
       },
       "linkHotspots": [],
       "infoHotspots": []
@@ -53,110 +53,17 @@ var APP_DATA = {
           "size": 2048
         }
       ],
-      "faceSize": 1919,
+      "faceSize": 2000,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 0.009696273622193274,
+        "pitch": 0.01547468860623269,
+        "fov": 1.5036239095726056
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
-      "id": "2-canchas",
-      "name": "Canchas",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1919,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [],
-      "infoHotspots": []
-    },
-    {
-      "id": "3-foro",
-      "name": "Foro",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1919,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [],
-      "infoHotspots": []
-    },
-    {
-      "id": "4-auditorio",
-      "name": "Auditorio",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1919,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [],
-      "infoHotspots": []
-    },
-    {
-      "id": "5-preescolar",
+      "id": "2-preescolar",
       "name": "Preescolar",
       "levels": [
         {
@@ -177,17 +84,17 @@ var APP_DATA = {
           "size": 2048
         }
       ],
-      "faceSize": 1919,
+      "faceSize": 2000,
       "initialViewParameters": {
+        "yaw": 0.00796260999999987,
         "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "fov": 1.5036239095726056
       },
       "linkHotspots": [],
       "infoHotspots": []
     },
     {
-      "id": "6-primaria",
+      "id": "3-primaria",
       "name": "Primaria",
       "levels": [
         {
@@ -208,7 +115,7 @@ var APP_DATA = {
           "size": 2048
         }
       ],
-      "faceSize": 1919,
+      "faceSize": 2000,
       "initialViewParameters": {
         "pitch": 0,
         "yaw": 0,
@@ -218,7 +125,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "7-secundaria",
+      "id": "4-secundaria",
       "name": "Secundaria",
       "levels": [
         {
@@ -239,7 +146,7 @@ var APP_DATA = {
           "size": 2048
         }
       ],
-      "faceSize": 1919,
+      "faceSize": 2000,
       "initialViewParameters": {
         "pitch": 0,
         "yaw": 0,
@@ -249,8 +156,8 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "8-bachillerato",
-      "name": "Bachillerato",
+      "id": "5-canchas",
+      "name": "Canchas",
       "levels": [
         {
           "tileSize": 256,
@@ -270,7 +177,69 @@ var APP_DATA = {
           "size": 2048
         }
       ],
-      "faceSize": 1919,
+      "faceSize": 2000,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "6-foro",
+      "name": "Foro",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2000,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "7-auditorio",
+      "name": "Auditorio",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2000,
       "initialViewParameters": {
         "pitch": 0,
         "yaw": 0,
@@ -284,7 +253,7 @@ var APP_DATA = {
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": true,
-    "fullscreenButton": true,
-    "viewControlButtons": true
+    "fullscreenButton": false,
+    "viewControlButtons": false
   }
 };
