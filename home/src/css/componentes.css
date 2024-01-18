@@ -22,6 +22,10 @@
     text-align: justify;
 }
 
+.centrado {
+    text-align: center;
+}
+
 .negritas {
     font-weight: bold;
 }
