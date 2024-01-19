@@ -24,25 +24,26 @@ var APP_DATA = {
       ],
       "faceSize": 2000,
       "initialViewParameters": {
-        "yaw": 0.07287378535533229,
-        "pitch": 0.0025791147677072246,
+        "yaw": 0.02327105669325391,
+        "pitch": 0.015474688606234466,
         "fov": 1.5036239095726056
       },
       "linkHotspots": [
         {
-          "yaw": -0.1688327576335098,
-          "pitch": 0.04033588830255397,
-          "rotation": 0,
-          "target": "0-entrada-snchez-magallanes"
-        },
-        {
-          "yaw": 0.688626103210348,
-          "pitch": -0.00006116264325228826,
+          "yaw": 0.703666549686158,
+          "pitch": -0.043000241045728416,
           "rotation": 0,
           "target": "4-preescolar"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -0.1719432456575145,
+          "pitch": 0.025363351275752066,
+          "title": "Entrada Sánchez Magallanes<br>",
+          "text": "Entrada Secundaria<br>"
+        }
+      ]
     },
     {
       "id": "1-entrada-lino-merino",
@@ -68,91 +69,22 @@ var APP_DATA = {
       ],
       "faceSize": 2000,
       "initialViewParameters": {
-        "yaw": -0.0624172540971788,
-        "pitch": 0.033528491980176156,
-        "fov": 1.5036239095726056
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
       },
-      "linkHotspots": [
-        {
-          "yaw": -0.04957796734117359,
-          "pitch": 0.03994011793271213,
-          "rotation": 0,
-          "target": "1-entrada-lino-merino"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "2-foro",
-      "name": "Foro",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 2000,
-      "initialViewParameters": {
-        "yaw": 0.026335189756192534,
-        "pitch": -0.007737344303116345,
-        "fov": 1.5036239095726056
-      },
-      "linkHotspots": [
-        {
-          "yaw": 0.026335189756192534,
-          "pitch": -0.007737344303116345,
-          "rotation": 0,
-          "target": "2-foro"
-        },
-        {
-          "yaw": 1.9945838949321777,
-          "pitch": -0.05347006845790503,
-          "rotation": 0,
-          "target": "3-canchas"
-        },
-        {
-          "yaw": 2.7982312443150015,
-          "pitch": -0.046214826799893416,
-          "rotation": 0,
-          "target": "4-preescolar"
-        },
-        {
-          "yaw": -2.4409463487721244,
-          "pitch": -0.09177569133299635,
-          "rotation": 0,
-          "target": "6-secundaria"
-        },
-        {
-          "yaw": -2.9091093588603716,
-          "pitch": -0.07255763210587496,
-          "rotation": 0,
-          "target": "0-entrada-snchez-magallanes"
-        }
-      ],
+      "linkHotspots": [],
       "infoHotspots": [
         {
-          "yaw": -2.7277761272173837,
-          "pitch": -0.06263594314387078,
-          "title": "Caja",
-          "text": "Caja de cobro<br>"
+          "yaw": -0.062880725735603,
+          "pitch": 0.022300613911031775,
+          "title": "Entrada Lino Merino<br>",
+          "text": "Entrada Primaria<br>"
         }
       ]
     },
     {
-      "id": "3-canchas",
+      "id": "2-canchas",
       "name": "Canchas",
       "levels": [
         {
@@ -181,30 +113,81 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 1.593845555807527,
-          "pitch": 0.0006111589490700453,
+          "yaw": -2.910234400039318,
+          "pitch": -0.007845530815270507,
           "rotation": 0,
-          "target": "3-canchas"
+          "target": "3-foro"
         },
         {
-          "yaw": -3.0230294105099773,
-          "pitch": -0.02308360076010274,
-          "rotation": 0,
-          "target": "2-foro"
-        },
-        {
-          "yaw": -0.3744651400283896,
-          "pitch": -0.009375446286700395,
+          "yaw": -0.3393479432992397,
+          "pitch": -0.002722070557231504,
           "rotation": 0,
           "target": "5-primaria"
         }
       ],
       "infoHotspots": [
         {
-          "yaw": -0.8400921897911307,
-          "pitch": -0.016763051261017736,
+          "yaw": -0.8477177690939008,
+          "pitch": -0.002267189850183371,
           "title": "Cooperativa",
-          "text": "Deliciosos platillos para toda la comunidad del Instituto Tabasco<br>"
+          "text": "Text"
+        }
+      ]
+    },
+    {
+      "id": "3-foro",
+      "name": "Foro",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2000,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.7955566057300487,
+          "pitch": -0.049975960026348076,
+          "rotation": 0,
+          "target": "4-preescolar"
+        },
+        {
+          "yaw": -2.407680075505903,
+          "pitch": -0.09088281958364419,
+          "rotation": 0,
+          "target": "7-secundaria"
+        },
+        {
+          "yaw": 1.453454636183272,
+          "pitch": -0.004024546934942919,
+          "rotation": 0,
+          "target": "2-canchas"
+        }
+      ],
+      "infoHotspots": [
+        {
+          "yaw": -2.7683431893320716,
+          "pitch": -0.026349485480695378,
+          "title": "Caja",
+          "text": "Donde cobra doña Lichita<br>"
         }
       ]
     },
@@ -238,10 +221,10 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -0.9572760366447657,
-          "pitch": -0.03801981855615466,
+          "yaw": -0.9628537856840058,
+          "pitch": -0.03364281541550618,
           "rotation": 0,
-          "target": "2-foro"
+          "target": "3-foro"
         }
       ],
       "infoHotspots": []
@@ -276,98 +259,41 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -0.5072785377068953,
-          "pitch": -0.03804877905799664,
+          "yaw": -0.5366203233756615,
+          "pitch": -0.050219966628988644,
           "rotation": 0,
-          "target": "3-canchas"
+          "target": "2-canchas"
         },
         {
-          "yaw": -0.014467359216371989,
-          "pitch": -0.2631926408430214,
+          "yaw": -2.745223305119193,
+          "pitch": -0.07222044130116423,
           "rotation": 0,
-          "target": "9-laboratorio-computo-1-primaria"
+          "target": "6-auditorio"
+        },
+        {
+          "yaw": -1.2372851188047207e-8,
+          "pitch": -0.26616875435287213,
+          "rotation": 0,
+          "target": "10-laboratorio-cmputo-1-primaria"
+        },
+        {
+          "yaw": -2.9861601562742806,
+          "pitch": -0.2584730197782896,
+          "rotation": 0,
+          "target": "11-laboratorio-cmputo-2-primaria"
         }
       ],
       "infoHotspots": [
         {
-          "yaw": 2.588543100290824,
-          "pitch": -0.0799100977846674,
+          "yaw": 2.5803175177145707,
+          "pitch": -0.08603323798149276,
           "title": "Dirección Primaria<br>",
           "text": "<br>"
         }
       ]
     },
     {
-      "id": "6-secundaria",
-      "name": "Secundaria",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 2000,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -0.7826372438262865,
-          "pitch": -0.9186085841878224,
-          "rotation": 0,
-          "target": "11-laboratorio-computo-secundaria"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "7-bachillerato",
-      "name": "Bachillerato",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1919,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [],
-      "infoHotspots": []
-    },
-    {
-      "id": "8-auditorio",
+      "id": "6-auditorio",
       "name": "Auditorio",
       "levels": [
         {
@@ -396,8 +322,8 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 2.914031551399833,
-          "pitch": -0.0009632673497907973,
+          "yaw": 2.91732547267846,
+          "pitch": 0.015722286875575975,
           "rotation": 0,
           "target": "5-primaria"
         }
@@ -405,8 +331,8 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "9-laboratorio-computo-1-primaria",
-      "name": "Laboratorio Computo 1 Primaria",
+      "id": "7-secundaria",
+      "name": "Secundaria",
       "levels": [
         {
           "tileSize": 256,
@@ -434,17 +360,23 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 3.051049650451512,
-          "pitch": 0.04977467059278595,
+          "yaw": -2.8996329737485738,
+          "pitch": 0.06687629634319592,
           "rotation": 0,
-          "target": "5-primaria"
+          "target": "3-foro"
+        },
+        {
+          "yaw": -1.0737908173787378,
+          "pitch": -0.9626405510671638,
+          "rotation": 0,
+          "target": "12-laboratorio-cmputo-secundaria"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "10-laboratorio-computo-2-primaria",
-      "name": "Laboratorio Computo 2 Primaria",
+      "id": "8-bachillerato",
+      "name": "Bachillerato",
       "levels": [
         {
           "tileSize": 256,
@@ -472,17 +404,54 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -0.4131133427166791,
-          "pitch": 0.005881570170712891,
+          "yaw": -1.0551408018446615,
+          "pitch": -0.04302329175794739,
           "rotation": 0,
-          "target": "5-primaria"
+          "target": "9-cancha-bachillerato"
+        },
+        {
+          "yaw": -1.5760993664970808,
+          "pitch": -0.35215316509050965,
+          "rotation": 0,
+          "target": "13-laboratorio-cmputo-bachillerato"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "11-laboratorio-computo-secundaria",
-      "name": "Laboratorio Computo Secundaria",
+      "id": "9-cancha-bachillerato",
+      "name": "Cancha Bachillerato",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2000,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "10-laboratorio-cmputo-1-primaria",
+      "name": "Laboratorio Cómputo 1 Primaria",
       "levels": [
         {
           "tileSize": 256,
@@ -510,10 +479,124 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 1.9532414374527463,
-          "pitch": 0.15723091296581515,
+          "yaw": 3.0434403058397947,
+          "pitch": 0.027306977832067147,
           "rotation": 0,
-          "target": "6-secundaria"
+          "target": "5-primaria"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "11-laboratorio-cmputo-2-primaria",
+      "name": "Laboratorio Cómputo 2 Primaria",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2000,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.44582644357764956,
+          "pitch": -0.02603996429483857,
+          "rotation": 0,
+          "target": "5-primaria"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "12-laboratorio-cmputo-secundaria",
+      "name": "Laboratorio Cómputo Secundaria",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2000,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": 1.9510305835675599,
+          "pitch": 0.15198029637609878,
+          "rotation": 0,
+          "target": "7-secundaria"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "13-laboratorio-cmputo-bachillerato",
+      "name": "Laboratorio Cómputo Bachillerato",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2000,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.044520683047887,
+          "pitch": 0.13853516154867052,
+          "rotation": 0,
+          "target": "8-bachillerato"
         }
       ],
       "infoHotspots": []
@@ -523,7 +606,7 @@ var APP_DATA = {
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": true,
-    "fullscreenButton": true,
-    "viewControlButtons": true
+    "fullscreenButton": false,
+    "viewControlButtons": false
   }
 };
