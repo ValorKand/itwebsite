@@ -30,6 +30,10 @@
     font-weight: bold;
 }
 
+.subrayado {
+    text-decoration: underline;
+}
+
 .tabulacion {
     padding-left: 40px;
 }
