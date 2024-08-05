@@ -616,6 +616,57 @@
                     </div>
                 </div>
                 <div class="ui hidden divider"></div>
+                <!-- sección del mapa -->
+                <div class="ui grid">
+                    <!-- mapa solo para pc -->
+                    <div class="computer only column">
+                        <div class="ui middle inverted stripe aligned stackable segment">
+                            <div class="ui middle aligned container">
+                                <h1 class="ui inverted header">
+                                    <img src="./img/ui/iconos/mapa-invertido.png"></img>
+                                    <div class="ui content">Ubícanos</div>
+                                </h1>
+                            </div>
+                            <div class="ui two column grid">
+                                <div class="ui right aligned column">
+                                    <div class="ui nine wide column">
+                                        <iframe src="https://embed.apple-mapkit.com/v1/place?place=ICFE940668B0FC4F2&language=es-MX&colorScheme=adaptive&token=eyJraWQiOiJSM0oyTkhKRk5KIiwidHlwIjoiSldUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJXWkFBM0c2Sjg5IiwiaWF0IjoxNzIyODAxNTI5LCJleHAiOjE3MjM0NDU5OTl9.CDR5A-uQUuFTu3GJWYGy0cIQ8bw9U3J-kasv4_bk6rf9Ftiu3Tm2SGllnjdOUYL5WgA5JL6EJTU0cgb3Aihotw" width="600" height="400" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                                <div class="ui column">
+                                    <h1>Tambien en...</h1>
+                                    <a class="ui green button" href="https://g.co/kgs/sro7x5F" target="_blank">
+                                        <i class="ui google icon"></i> Google Maps
+                                    </a>
+                                    <div class="ui hidden divider"></div>
+                                    <a class="ui button" href="https://osm.org/go/S_PptcU6y?way=618109229" target="_blank">
+                                        <i class="ui map icon"></i> Open Street Maps
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui grid">
+                    <div class="mobile only column">
+                        <div class="computer hidden mobile only column">
+                            <div class="ui middle inverted aligned stackable segment">
+                                <h1>📍 Ubícanos</h1>
+                                <div class="ui grid">
+                                    <iframe src="https://embed.apple-mapkit.com/v1/place?place=ICFE940668B0FC4F2&language=es-MX&colorScheme=adaptive&token=eyJraWQiOiJSM0oyTkhKRk5KIiwidHlwIjoiSldUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJXWkFBM0c2Sjg5IiwiaWF0IjoxNzIyODAxNTI5LCJleHAiOjE3MjM0NDU5OTl9.CDR5A-uQUuFTu3GJWYGy0cIQ8bw9U3J-kasv4_bk6rf9Ftiu3Tm2SGllnjdOUYL5WgA5JL6EJTU0cgb3Aihotw" width="300" height="400" frameborder="0"></iframe>
+                                </div>
+                                <h1>Tambien en...</h1>
+                                <a class="ui green button" href="https://g.co/kgs/sro7x5F" target="_blank">
+                                    <i class="ui google icon"></i> Google Maps
+                                </a>
+                                <a class="ui button" href="https://osm.org/go/S_PptcU6y?way=618109229" target="_blank">
+                                    <i class="ui map icon"></i> Open Street Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui hidden divider"></div>
                 <div class="ui text container">
                     <div class="ui huge header divider"></div>
                     <h3 class="ui header"><b>👷 </b>¿Te interesa trabajar con nosotros?</h3>
@@ -669,5 +720,10 @@
         <script src="./src/js/funciones.js"></script>
         <script src="./src/js/slider.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+        <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.core.js"
+            crossorigin async
+            data-callback="initMapKit"
+            data-libraries="services,full-map,geojson">
+        </script>
     </body>
 </html>
