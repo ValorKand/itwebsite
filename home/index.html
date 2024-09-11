@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="./src/css/body.css"></link>
         <link rel="stylesheet" href="./src/css/slider.css"></link>
         <link rel="stylesheet" href="./src/css/componentes.css"></link>
+        <link rel="stylesheet" href="./src/sfsymbols/sfsymbols.css"></link>
     </head>
     <body id="root">
         <!-- Modal (ventana emergente) de aviso de privacidad -->
@@ -239,6 +240,7 @@
             </div>
             <a class="item header" onClick="window.location='#ofertaEducativa'"><i class="graduation cap icon"></i>Oferta Educativa</a>
             <a class="item header" href="https://institutotabasco.educamos.com" target="_blank"><i class="book icon"></i>Educamos</a>
+            <a class="item header" id="ayudaSM" href="#"><i class="ui icon question circle"></i>Soporte Educamos</a>
         </div>
         <!-- Todo el contenido de la pagina -->
         <div class="pusher">
@@ -313,9 +315,29 @@
                                 </a>
                             </div>
                             <div class="menu">
-                                <a href="https://institutotabasco.educamos.com" class="ui black button" target="_blank">
-                                    <i class="book icon"></i>Educamos
-                                </a>
+                                <div class="ui buttons">
+                                    <a href="https://institutotabasco.educamos.com" class="ui left attached black button" target="_blank">
+                                        <i class="book icon"></i>Educamos
+                                    </a>
+                                    <a id="ayudaSM2" href="#" class="ui right attached black button">
+                                        <i class="ui icon question circle"></i>
+                                    </a>
+                                    <div id="ayudasm" class="ui modal">
+                                        <div class="ui inverted segment">
+                                            <div class="ui grid">
+                                                <div class="row">
+                                                    <h1>¿Necesitas ayuda con la plataforma Educamos?</h1>
+                                                </div>
+                                                <div class="row">
+                                                    <h2>Escríbenos un correo con tu problema y te atenderemos en breve</h2>
+                                                </div>
+                                                <div class="row">
+                                                    <a href="mailto:davidvales@institutotabasco.edu.mx" class="ui blue button">Enviar Correo 👩‍💻</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
