@@ -3,7 +3,7 @@
 body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: grayscale;
-    }
+}
 
 .hidden.menu {
     display: none;
@@ -26,7 +26,7 @@ body {
 .thirdhead.segment {
     min-height: 100px;
     padding: 1em 0em;
-    margin-bottom: ;
+    margin-bottom:;
 }
 
 .masthead .logo.item img {
@@ -75,7 +75,7 @@ body {
     font-weight: 500;
 }
 
-.masthead h2{
+.masthead h2 {
     font-size: 1.7em;
     font-weight: normal;
 }
@@ -131,6 +131,10 @@ body {
 /*comportamiento del menú*/
 .primary.pointing.menu .toc.item {
     display: none;
+}
+
+.requisitos {
+    margin-left: 1%;
 }
 
 /* Manipula las vistas para móvil y resoluciones similares */

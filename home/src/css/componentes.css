@@ -1,4 +1,4 @@
-@import url('Matrix-Book.css');
+@import url("Matrix-Book.css");
 
 .bocadito {
     background-color: #000000;
@@ -30,6 +30,10 @@
     font-weight: bold;
 }
 
+.cursiva {
+    font-style: italic;
+}
+
 .subrayado {
     text-decoration: underline;
 }
@@ -38,7 +42,12 @@
     padding-left: 40px;
 }
 
-#mainTitle, #subTitle, #secondTitle, #secondsubTitle, #thirdTitle, #thirdsubTitle {
+#mainTitle,
+#subTitle,
+#secondTitle,
+#secondsubTitle,
+#thirdTitle,
+#thirdsubTitle {
     font-family: Matrix-Book;
 }
 
@@ -84,19 +93,23 @@
     border-radius: 50px;
 }
 
-#secondTitle.preescolar, #thirdTitle.preescolar {
+#secondTitle.preescolar,
+#thirdTitle.preescolar {
     background-color: #f48fb1;
 }
 
-#secondTitle.primaria, #thirdTitle.primaria {
+#secondTitle.primaria,
+#thirdTitle.primaria {
     background-color: #7e57c2;
 }
 
-#secondTitle.secundaria, #thirdTitle.secundaria {
+#secondTitle.secundaria,
+#thirdTitle.secundaria {
     background-color: #8bc34a;
 }
 
-#secondTitle.bachillerato, #thirdTitle.bachillerato {
+#secondTitle.bachillerato,
+#thirdTitle.bachillerato {
     background-color: #304ffe;
     font-size: 40px;
 }
@@ -125,26 +138,26 @@
 /*fondos de las secciones*/
 
 #headIndex {
-    background-image: url('../.././img/ui/pagina/itheader.png');
+    background-image: url("../.././img/ui/pagina/itheader.png");
     background-size: cover;
 }
 
 #headPreescolar {
-    background-image: url('../.././img/ui/pagina/preescolarheader.png');
+    background-image: url("../.././img/ui/pagina/preescolarheader.png");
     background-size: cover;
 }
 
 #headPrimaria {
-    background-image: url('../.././img/ui/pagina/primariaheader.png');
+    background-image: url("../.././img/ui/pagina/primariaheader.png");
     background-size: cover;
 }
 
 #headSecundaria {
-    background-image: url('../.././img/ui/pagina/secundariaheader.png');
+    background-image: url("../.././img/ui/pagina/secundariaheader.png");
     background-size: cover;
 }
 
 #headBachillerato {
-    background-image: url('../.././img/ui/pagina/bachilleratoheader.jpg');
+    background-image: url("../.././img/ui/pagina/bachilleratoheader.jpg");
     background-size: cover;
 }
