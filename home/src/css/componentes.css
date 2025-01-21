@@ -161,3 +161,28 @@
     background-image: url("../.././img/ui/pagina/bachilleratoheader.jpg");
     background-size: cover;
 }
+
+.arcoiris {
+    color: transparent;
+    background: linear-gradient(
+        270deg,
+        #1e5799,
+        #2ce0bf,
+        #76dd2c,
+        #dba62b,
+        #ff1493,
+        #1e5799
+    );
+    animation: gradiente 64s linear infinite;
+    background-size: 60% 100%;
+    -webkit-background-clip: text;
+}
+
+@keyframes gradiente {
+    0% {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: 10240px;
+    }
+}
